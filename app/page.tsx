@@ -1,21 +1,21 @@
-import { getSession, signIn } from 'next-auth/react';
-import { GetServerSideProps, GetServerSideProps } from 'next';
-import Dashboard from '../components/dashboard'; 
+// app/page.tsx
+import { getSession } from 'next-auth/react';
+import { GetServerSideProps } from 'next';
 
-const Home = ({ session }) => {
+const DashboardPage = async ({ session }) => {
   if (!session) {
-    return (
-      <div>
-        <h1>Access Denied</h1>
-        <p>You need to be signed in to view the dashboard.</p>
-      </div>
-    );
+    return <div>You need to be authenticated to view this page.</div>;
   }
-  
-  return <Dashboard/>;
+
+  return (
+    <div>
+      <h1>Welcome to the Dashboard</h1>
+      {/* Rest of your dashboard content */}
+    </div>
+  );
 };
 
-export const GetServerSideProps: GetServerSideProps = async (context) => {
+export const getServerSideProps: GetServerSideProps = async (context) => {
   const session = await getSession(context);
   if (!session) {
     return {
@@ -30,5 +30,4 @@ export const GetServerSideProps: GetServerSideProps = async (context) => {
   };
 };
 
-
-export default Home;
+export default DashboardPage;
