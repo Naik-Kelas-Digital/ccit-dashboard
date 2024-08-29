@@ -1,0 +1,19 @@
+{
+    "monthlyData": [
+      { "month": "Jan", "income": 60, "outcome": 40 },
+      { "month": "Feb", "income": 90, "outcome": 30 },
+      { "month": "Mar", "income": 70, "outcome": 50 },
+      { "month": "Apr", "income": 85, "outcome": 45 },
+      { "month": "May", "income": 95, "outcome": 55 },
+      { "month": "Jun", "income": 60, "outcome": 35 },
+      { "month": "Jul", "income": 75, "outcome": 40 },
+      { "month": "Aug", "income": 80, "outcome": 30 },
+      { "month": "Sep", "income": 70, "outcome": 20 },
+      { "month": "Oct", "income": 100, "outcome": 60 },
+      { "month": "Nov", "income": 90, "outcome": 50 },
+      { "month": "Dec", "income": 95, "outcome": 65 }
+    ],
+    "totalEarnings": 12488.99,
+    "earningPercentage": 74
+  }
+  

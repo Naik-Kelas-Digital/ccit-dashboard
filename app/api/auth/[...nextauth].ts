@@ -1,33 +1,33 @@
-// app/api/auth/[...nextauth].ts
-import NextAuth from 'next-auth';
-import Providers from 'next-auth/providers';
-import { PrismaAdapter } from '@next-auth/prisma-adapter';
-import prisma from '../../../lib/prisma';
+// // app/api/auth/[...nextauth].ts
+// import NextAuth from 'next-auth';
+// import Providers from 'next-auth/providers';
+// import { PrismaAdapter } from '@next-auth/prisma-adapter';
+// import prisma from '../../../lib/prisma';
 
-export default NextAuth({
-  providers: [
-    Providers.Credentials({
-      name: 'Credentials',
-      credentials: {
-        username: { label: 'Username', type: 'text' },
-        password: { label: 'Password', type: 'password' },
-      },
-      async authorize(credentials) {
-        // Replace this with your own login logic
-        const user = await prisma.user.findUnique({
-          where: {
-            username: credentials.username,
-          },
-        });
+// export default NextAuth({
+//   providers: [
+//     Providers.Credentials({
+//       name: 'Credentials',
+//       credentials: {
+//         username: { label: 'Username', type: 'text' },
+//         password: { label: 'Password', type: 'password' },
+//       },
+//       async authorize(credentials) {
+//         // Replace this with your own login logic
+//         const user = await prisma.user.findUnique({
+//           where: {
+//             username: credentials.username,
+//           },
+//         });
 
-        if (user && user.password === credentials.password) {
-          return user;
-        } else {
-          return null;
-        }
-      },
-    }),
-  ],
-  adapter: PrismaAdapter(prisma),
-  secret: process.env.NEXTAUTH_SECRET,
-});
+//         if (user && user.password === credentials.password) {
+//           return user;
+//         } else {
+//           return null;
+//         }
+//       },
+//     }),
+//   ],
+//   adapter: PrismaAdapter(prisma),
+//   secret: process.env.NEXTAUTH_SECRET,
+// });

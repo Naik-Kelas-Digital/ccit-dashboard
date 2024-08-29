@@ -11,18 +11,20 @@ const Dashboard: React.FC = () => {
 
   return (
     <main className="flex-grow p-8">
-      <header className="flex items-center justify-between p-4 mb-8">
-        <div>
-          <h1 className="text-[#3B4C68] text-2xl font-bold custom-font">Dashboard View</h1>
-          <p className="text-[#B7C1D1] custom-font">Welcome back to dashboard !!</p>
-        </div>
-        <div className="relative">
-          <input
-            type="text"
-            placeholder="Search..."
-            className="pl-8 pr-4 py-2 w-[307px] h-[55px] border border-gray-300 rounded-full"
-          />
-          <span className="absolute left-4 top-1/2 transform -translate-y-1/2">🔍</span>
+      <header className="flex items-center justify-between mb-8">
+        <div className="flex items-center space-x-8">
+          <div className="flex flex-col">
+            <h1 className="text-[#3B4C68] text-2xl font-bold custom-font">Dashboard View</h1>
+            <p className="text-[#B7C1D1] custom-font">Welcome back to dashboard !!</p>
+          </div>
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Search..."
+              className="pl-8 pr-4 py-2 w-[307px] h-[40px] border border-gray-300 rounded-full"
+            />
+            <span className="absolute left-4 top-1/2 transform -translate-y-1/2">🔍</span>
+          </div>
         </div>
       </header>
       <section className="flex space-x-8">
