@@ -15,9 +15,7 @@ const MonthlyAverageIncome: React.FC = () => {
         return <div>Loading...</div>;
     }
 
-    // Assuming a max height of 100px for the bars
     const maxHeight = 100; 
-
     return (
         <div className="p-8 bg-white rounded-lg shadow flex justify-between items-center">
             <div className="w-3/5">
