@@ -5,7 +5,7 @@
       { "month": "Mar", "income": 70, "outcome": 50 },
       { "month": "Apr", "income": 85, "outcome": 45 },
       { "month": "May", "income": 95, "outcome": 55 },
-      { "month": "Jun", "income": 60, "outcome": 35 },
+      { "month": "Jun", "income": 10, "outcome": 35 },
       { "month": "Jul", "income": 75, "outcome": 40 },
       { "month": "Aug", "income": 80, "outcome": 30 },
       { "month": "Sep", "income": 70, "outcome": 20 },

@@ -1,6 +1,8 @@
+// components/Dashboard.tsx
 import React from 'react';
 import MonthlyAverageIncome from './MonthlyAverageIncome';  
 import ProfileCard from './ProfileCard';
+import Link from 'next/link'; // Tambahkan import Link
 
 const Dashboard: React.FC = () => {
   const products = [
@@ -33,7 +35,8 @@ const Dashboard: React.FC = () => {
           <div className="p-4 bg-white rounded-lg shadow mt-8">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-xl font-bold">Product Highlight</h2>
-              <a href="#" className="text-blue-500">View All</a>
+              {/* Tambahkan Link ke Product List */}
+              <Link href="/products" className="text-blue-500">View All Products</Link>
             </div>
             <div className="space-y-4">
               {products.map((product, index) => (
@@ -63,6 +66,10 @@ const Dashboard: React.FC = () => {
                 </div>
               ))}
             </div>
+          </div>
+          {/* Tambahkan Link ke Add Product */}
+          <div className="mt-4">
+            <Link href="/products/add" className="bg-blue-500 text-white py-2 px-4 rounded">Add New Product</Link>
           </div>
         </div>
         <ProfileCard />

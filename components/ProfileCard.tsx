@@ -1,3 +1,4 @@
+// components/ProfileCard.tsx
 import React from 'react';
 
 const ProfileCard: React.FC = () => {

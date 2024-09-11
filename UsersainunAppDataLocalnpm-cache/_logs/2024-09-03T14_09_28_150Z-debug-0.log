@@ -7,8 +7,8 @@
 6 silly config load:file:C:\Users\ainun\AppData\Roaming\npm\etc\npmrc
 7 verbose title npm config get registry
 8 verbose argv "config" "get" "registry"
-9 verbose logfile logs-max:10 dir:C:\Users\ainun\OneDrive\Desktop\ccit-dashboard\UsersainunAppDataLocalnpm-cache\_logs\2024-09-03T13_42_10_954Z-
-10 verbose logfile C:\Users\ainun\OneDrive\Desktop\ccit-dashboard\UsersainunAppDataLocalnpm-cache\_logs\2024-09-03T13_42_10_954Z-debug-0.log
+9 verbose logfile logs-max:10 dir:C:\Users\ainun\OneDrive\Desktop\ccit-dashboard\UsersainunAppDataLocalnpm-cache\_logs\2024-09-03T14_09_28_150Z-
+10 verbose logfile C:\Users\ainun\OneDrive\Desktop\ccit-dashboard\UsersainunAppDataLocalnpm-cache\_logs\2024-09-03T14_09_28_150Z-debug-0.log
 11 verbose cwd C:\Users\ainun\OneDrive\Desktop\ccit-dashboard
 12 verbose os Windows_NT 10.0.22631
 13 verbose node v22.4.1
